@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Keshavaraj B — Product Software Engineer, Java & Spring Boot Developer, AI Enthusiast" />
+<title>Keshavaraj B · Product Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<!-- ============== NAVBAR ============== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="logo">
+      <span class="logo-bracket">&lt;</span>KB<span class="logo-bracket">/&gt;</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#ai">AI ENGINEERING</a></li>
+      <li><a href="#education">EDUCATION</a></li>
+      <li><a href="#experience">EXPERIENCE</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============== HERO ============== -->
+<section id="hero" class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="status-dot"></span>
+      <span>Available for Engineering Roles</span>
+    </div>
+
+    <h1 class="hero-title">
+      <span class="hero-greeting">Hi, I'm</span>
+      <span class="gradient-text glitch" data-text="Keshavaraj B">Keshavaraj B</span>
+    </h1>
+
+    <h2 class="hero-subtitle">
+      <span id="typed"></span><span class="cursor">|</span>
+    </h2>
+
+    <p class="hero-description">
+      Product Software Engineer crafting <strong>enterprise legal tech solutions</strong>,
+      Java integrations, and AI-powered workflow automation that
+      <em>streamline, automate, and scale</em>.
+    </p>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-value" data-target="4">0</div>
+        <div class="stat-label">Automation Projects</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-value" data-target="4">0</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-value" data-target="12">0</div>
+        <div class="stat-label">Enterprise Clients</div>
+      </div>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#experience" class="btn btn-primary">
+        <i class="fa-solid fa-rocket"></i> Explore My Work
+      </a>
+      <a href="#contact" class="btn btn-secondary">
+        <i class="fa-solid fa-paper-plane"></i> Get in Touch
+      </a>
+    </div>
+
+    <div class="hero-socials">
+      <a href="mailto:balajikeshav201099@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="tel:+919790741140" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+      <a href="https://github.com/keshavaraj-b" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/keshava-raj-00b128159/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://keshavaraj-b.github.io/keshavaraj-b" target="_blank" rel="noopener" aria-label="Portfolio"><i class="fa-solid fa-globe"></i></a>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============== ABOUT ============== -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Personal <span class="gradient-text">Information</span></h2>
+      <p class="section-sub">Who's behind the code</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-code reveal">
+        <div class="code-window">
+          <div class="code-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="code-title">keshavaraj.py</span>
+          </div>
+          <pre class="code-body"><code><span class="kw">@Product_Engineer</span>
+<span class="kw">class</span> <span class="cls">Keshavaraj_B</span>:
+    full_name  = <span class="str">"Keshavaraj B"</span>
+    title      = <span class="str">"Product Software Engineer"</span>
+    company    = <span class="str">"Wolters Kluwer ELM Solutions"</span>
+    location   = <span class="str">"Chennai, Tamil Nadu, India"</span>
+
+    contact = {
+        <span class="str">"📱 mobile"</span>:    <span class="str">"+91 97907 41140"</span>,
+        <span class="str">"📧 email"</span>:     <span class="str">"balajikeshav201099@gmail.com"</span>,
+        <span class="str">"💼 github"</span>:    <span class="str">"github.com/keshavaraj-b"</span>,
+        <span class="str">"🔗 linkedin"</span>:  <span class="str">"linkedin.com/in/keshava-raj"</span>,
+        <span class="str">"🌐 portfolio"</span>: <span class="str">"keshavaraj-b.github.io"</span>,
+    }
+
+    <span class="kw">def</span> <span class="fn">mission</span>(<span class="kw">self</span>):
+        <span class="kw">return</span> (
+            <span class="str">"Build enterprise legal tech solutions "</span>
+            <span class="str">"with Java, Spring Boot & AI "</span>
+            <span class="str">"that drive workflow automation."</span>
+        )</code></pre>
+        </div>
+      </div>
+      <div class="about-info reveal">
+        <h3 class="about-heading">Building Efficient Systems, One Integration at a Time.</h3>
+        <p>I'm a Product Software Engineer specializing in <strong>enterprise Java systems</strong>, integrations, and intelligent automation. My work focuses on enhancing legal product modules and building data pipelines for Fortune 500 clients.</p>
+        <p>From automating cascading filters to engineering release notes pipelines — I build systems that <em>save time and reduce human error</em> at scale.</p>
+        <ul class="about-meta">
+          <li><i class="fa-solid fa-briefcase"></i> Product Software Engineer</li>
+          <li><i class="fa-solid fa-building"></i> Wolters Kluwer ELM Solutions</li>
+          <li><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu, India</li>
+          <li><i class="fa-solid fa-graduation-cap"></i> B.E. — Mechanical Engineering</li>
+        </ul>
+        <div class="about-actions">
+          <a href="https://github.com/keshavaraj-b" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/keshava-raj-00b128159/" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+          <a href="mailto:balajikeshav201099@gmail.com" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Email Me</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== SKILLS ============== -->
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+      <p class="section-sub">My engineering arsenal</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-server"></i></div><h3>Backend</h3><div class="skill-tags"><span>Java</span><span>Spring Boot</span><span>Microservices</span><span>RESTful APIs</span><span>Groovy</span><span>JUnit</span></div></div>
+      <div class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-palette"></i></div><h3>Frontend</h3><div class="skill-tags"><span>Angular v8</span><span>HTML</span><span>CSS</span></div></div>
+      <div class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-cloud"></i></div><h3>Cloud</h3><div class="skill-tags"><span>AWS</span><span>PCF (Pivotal Cloud Foundry)</span><span>Azure</span></div></div>
+      <div class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-database"></i></div><h3>Database</h3><div class="skill-tags"><span>MySQL</span><span>MS SQL</span></div></div>
+      <div class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div><h3>Tools</h3><div class="skill-tags"><span>VS Code</span><span>Postman</span><span>DBeaver</span><span>SQL Server Mgmt Studio</span><span>Git</span><span>GitHub Desktop</span></div></div>
+      <div class="skill-card reveal skill-ai"><div class="skill-icon"><i class="fa-solid fa-robot"></i></div><h3>AI</h3><div class="skill-tags"><span>MCP</span><span>GitHub Copilot</span><span>Claude Code</span><span>Instructions</span><span>Hooks</span><span>Sessions</span><span>Contexts</span><span>Specks</span><span>Prompt Engineering</span><span>LangChain</span><span>LangGraph</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== AI ENGINEERING ============== -->
+<section id="ai" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">03</span>
+      <h2 class="section-title">AI Engineering &amp; <span class="gradient-text">Automation</span></h2>
+      <p class="section-sub">What I've built &amp; mastered</p>
+    </div>
+    <div class="ai-grid">
+      <article class="ai-card reveal"><div class="ai-card-glow"></div><div class="ai-num">01</div><div class="ai-icon"><i class="fa-solid fa-filter"></i></div><h3>Cascading Filters Automation</h3><p>Automated <strong>repetitive filtering tasks</strong> across product modules, significantly boosting developer productivity.</p><div class="ai-chip"><i class="fa-solid fa-bolt"></i> Productivity</div></article>
+      <article class="ai-card reveal"><div class="ai-card-glow"></div><div class="ai-num">02</div><div class="ai-icon"><i class="fa-solid fa-file-lines"></i></div><h3>Release Notes Automation</h3><p>Streamlined the release documentation by <strong>automating generation</strong>, reducing turnaround time and errors.</p><div class="ai-chip"><i class="fa-solid fa-clock"></i> Time Saved</div></article>
+      <article class="ai-card reveal"><div class="ai-card-glow"></div><div class="ai-num">03</div><div class="ai-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div><h3>Static Code Analysis</h3><p>Implemented <strong>code quality analysis</strong> tools to catch issues early in the development lifecycle.</p><div class="ai-chip"><i class="fa-solid fa-circle-check"></i> Code Quality</div></article>
+      <article class="ai-card reveal"><div class="ai-card-glow"></div><div class="ai-num">04</div><div class="ai-icon"><i class="fa-solid fa-gears"></i></div><h3>Managed Service Automation</h3><p>Automated <strong>end-to-end service management</strong> workflows, reducing manual intervention.</p><div class="ai-chip"><i class="fa-solid fa-rocket"></i> Operations</div></article>
+      <article class="ai-card reveal"><div class="ai-card-glow"></div><div class="ai-num">05</div><div class="ai-icon"><i class="fa-brands fa-github"></i></div><h3>GitHub Copilot &amp; MCP</h3><p>Hands-on with <strong>GitHub Copilot, Claude Code, MCP protocol</strong> — building intelligent developer tooling.</p><div class="ai-chip"><i class="fa-solid fa-star"></i> AI Tooling</div></article>
+      <article class="ai-card reveal"><div class="ai-card-glow"></div><div class="ai-num">06</div><div class="ai-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div><h3>Prompt Engineering</h3><p>Advanced prompt engineering with <strong>LangChain &amp; LangGraph</strong> for enterprise AI applications.</p><div class="ai-chip"><i class="fa-solid fa-fire"></i> Advanced</div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============== EDUCATION ============== -->
+<section id="education" class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Academic <span class="gradient-text">Qualifications</span></h2>
+      <p class="section-sub">The foundation</p>
+    </div>
+    <div class="edu-timeline">
+      <div class="edu-item reveal"><div class="edu-year">2021</div><div class="edu-card"><div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div><div class="edu-info"><h3>B.E. — Mechanical Engineering</h3><p class="edu-school">Loyola Institute of Technology, Chennai</p></div><div class="edu-score"><span class="score-label">CGPA</span><span class="score-value">7.4</span></div></div></div>
+      <div class="edu-item reveal"><div class="edu-year">2017</div><div class="edu-card"><div class="edu-icon"><i class="fa-solid fa-school"></i></div><div class="edu-info"><h3>HSC — Higher Secondary</h3><p class="edu-school">Jaigopal Garodia Hindu Vidhyalaya, Chennai</p></div><div class="edu-score"><span class="score-label">Score</span><span class="score-value">79%</span></div></div></div>
+      <div class="edu-item reveal"><div class="edu-year">2015</div><div class="edu-card"><div class="edu-icon"><i class="fa-solid fa-book"></i></div><div class="edu-info"><h3>SSLC — Secondary Education</h3><p class="edu-school">Jaigopal Garodia Hindu Vidhyalaya, Chennai</p></div><div class="edu-score"><span class="score-label">Score</span><span class="score-value">89%</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== EXPERIENCE ============== -->
+<section id="experience" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Projects &amp; <span class="gradient-text">Experience</span></h2>
+      <p class="section-sub">Where I've shipped real impact</p>
+    </div>
+    <div class="exp-timeline">
+      <!-- WK Current -->
+      <div class="exp-item reveal">
+        <div class="exp-marker"><div class="marker-dot"></div><div class="marker-line"></div></div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <div><span class="exp-period">Apr 2025 — Present</span><h3 class="exp-company">Wolters Kluwer ELM Solutions</h3><p class="exp-role">Product Software Engineer · Chennai · Direct Payroll</p></div>
+            <div class="exp-tag-group"><span class="exp-tag tag-current">Current</span><span class="exp-tag">Full-time</span></div>
+          </div>
+          <div class="exp-meta">
+            <div class="meta-row"><span class="meta-label"><i class="fa-solid fa-users"></i> Clients</span><div class="meta-value"><span class="client-pill c-blue">HCA</span><span class="client-pill c-purple">Raymond James</span><span class="client-pill c-teal">Amtrak</span><span class="client-pill c-blue">Zurich</span><span class="client-pill c-coral">DWS</span><span class="client-pill c-red">CITI Bank</span><span class="client-pill c-purple">Manulife</span><span class="client-pill c-teal">Apollo</span><span class="client-pill c-coral">Alticor</span><span class="client-pill c-blue">QVC</span><span class="client-pill c-red">Canadian Pacific</span><span class="client-pill c-purple">Walmart</span></div></div>
+            <div class="meta-row"><span class="meta-label"><i class="fa-solid fa-landmark"></i> Domain</span><div class="meta-value">Enterprise Legal Management</div></div>
+            <div class="meta-row"><span class="meta-label"><i class="fa-solid fa-bolt"></i> Role</span><div class="meta-value">Java &amp; Groovy Product Developer</div></div>
+          </div>
+          <div class="exp-resp">
+            <div class="resp-block"><h4><i class="fa-solid fa-server"></i> Backend</h4><ul><li>Developed and enhanced legal product modules for <strong>12+ enterprise clients</strong></li><li>Built data integration processes for user, matter, invoice and person sync (Inbound &amp; Outbound)</li><li>Product customization and configuration with Groovy &amp; JavaScript</li></ul></div>
+            <div class="resp-block"><h4><i class="fa-solid fa-link"></i> Integrations</h4><ul><li>Built complete data sync pipelines for <strong>HCA</strong></li><li>Implemented inbound &amp; outbound integrations for <strong>CITI</strong> to third-party systems</li></ul></div>
+            <div class="resp-block"><h4><i class="fa-solid fa-robot"></i> Automation</h4><ul><li>Cascading Filters — automated repetitive filtering workflows</li><li>Release Notes — streamlined documentation generation</li><li>Static Code Analysis — enforced quality standards</li><li>Managed Service — automated operational workflows</li></ul></div>
+          </div>
+        </div>
+      </div>
+      <!-- WK Previous -->
+      <div class="exp-item reveal">
+        <div class="exp-marker"><div class="marker-dot"></div><div class="marker-line"></div></div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <div><span class="exp-period">Oct 2022 — Apr 2025</span><h3 class="exp-company">Wolters Kluwer ELM Solutions</h3><p class="exp-role">Associate Product Software Developer · Chennai</p></div>
+            <div class="exp-tag-group"><span class="exp-tag">Full-time</span></div>
+          </div>
+          <div class="exp-meta">
+            <div class="meta-row"><span class="meta-label"><i class="fa-solid fa-landmark"></i> Domain</span><div class="meta-value">Enterprise Legal Management</div></div>
+            <div class="meta-row"><span class="meta-label"><i class="fa-solid fa-bolt"></i> Role</span><div class="meta-value">Java &amp; Groovy Developer</div></div>
+          </div>
+          <div class="exp-resp"><div class="resp-block"><h4><i class="fa-solid fa-server"></i> Backend &amp; Integrations</h4><ul><li>Transitioned from <strong>contractor to full-time</strong> based on performance</li><li>Client-specific feature developments, bug fixes and production deployments</li><li>Auto matter number generation for <strong>Zurich</strong></li><li>Resolved invoice penny issues for <strong>DWS</strong></li><li>Maintained integrations with third-party services</li></ul></div></div>
+        </div>
+      </div>
+      <!-- Persolkelly -->
+      <div class="exp-item reveal">
+        <div class="exp-marker"><div class="marker-dot"></div><div class="marker-line"></div></div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <div><span class="exp-period">Mar 2022 — Oct 2022</span><h3 class="exp-company">Wolters Kluwer (Persolkelly)</h3><p class="exp-role">Project Intern · Chennai · Contract</p></div>
+            <div class="exp-tag-group"><span class="exp-tag">Contract</span></div>
+          </div>
+          <div class="exp-resp"><div class="resp-block"><ul><li>Development and maintenance activities for ELM Solutions</li><li>Gained expertise in core Java, microservices and production support</li></ul></div></div>
+        </div>
+      </div>
+      <!-- Just Dial -->
+      <div class="exp-item reveal">
+        <div class="exp-marker"><div class="marker-dot"></div></div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <div><span class="exp-period">Sep 2021 — Jan 2022</span><h3 class="exp-company">Just Dial Limited</h3><p class="exp-role">Information Retrieval Officer · Chennai</p></div>
+            <div class="exp-tag-group"><span class="exp-tag">Full-time</span></div>
+          </div>
+          <div class="exp-resp"><div class="resp-block"><ul><li>Provided accurate business information, improving service efficiency</li></ul></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CONTACT ============== -->
+<section id="contact" class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-num">06</span>
+      <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+      <p class="section-sub">Always open to interesting engineering conversations</p>
+    </div>
+    <div class="contact-grid">
+      <a href="mailto:balajikeshav201099@gmail.com" class="contact-card reveal"><div class="contact-icon"><i class="fa-solid fa-envelope"></i></div><h3>Email</h3><p>balajikeshav201099@gmail.com</p><span class="contact-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="tel:+919790741140" class="contact-card reveal"><div class="contact-icon"><i class="fa-solid fa-phone"></i></div><h3>Phone</h3><p>+91 97907 41140</p><span class="contact-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="https://github.com/keshavaraj-b" target="_blank" rel="noopener" class="contact-card reveal"><div class="contact-icon"><i class="fa-brands fa-github"></i></div><h3>GitHub</h3><p>github.com/keshavaraj-b</p><span class="contact-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="https://www.linkedin.com/in/keshava-raj-00b128159/" target="_blank" rel="noopener" class="contact-card reveal"><div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div><h3>LinkedIn</h3><p>linkedin.com/in/keshava-raj</p><span class="contact-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand"><p>Building efficient enterprise solutions with Java &amp; AI.</p></div>
+    <p class="footer-quote">"Code is the bridge between human intent and machine execution."</p>
+    <p class="footer-copy">&copy; <span id="year"></span> Keshavaraj B &middot; Crafted with <i class="fa-solid fa-heart"></i> &amp; AI</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
