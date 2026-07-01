@@ -421,41 +421,34 @@
   const hud = document.createElement('div');
   hud.className = 'hud-widget';
   hud.innerHTML = `
-    <div class="hud-line"><span class="hud-dot"></span> SYS ONLINE</div>
-    <div class="hud-line">LATENCY <span id="hud-lat">--</span>ms</div>
-    <div class="hud-line">SCROLL <span id="hud-scroll">0</span>%</div>
-    <div class="hud-line">FPS <span id="hud-fps">--</span></div>`;
+    <div class="hud-line"><span class="hud-label">SYS</span><span class="hud-value online"><span class="hud-dot"></span> ONLINE</span></div>
+    <div class="hud-line"><span class="hud-label">LOC</span><span class="hud-value" id="hud-loc">HERO</span></div>
+    <div class="hud-line"><span class="hud-label">PRG</span><span class="hud-value" id="hud-scroll">0%</span></div>
+    <div class="hud-line"><span class="hud-label">UTC</span><span class="hud-value" id="hud-utc">--:--:--</span></div>`;
   document.body.appendChild(hud);
 
-  const hudLat = document.getElementById('hud-lat');
+  const hudLoc = document.getElementById('hud-loc');
   const hudScroll = document.getElementById('hud-scroll');
-  const hudFps = document.getElementById('hud-fps');
+  const hudUtc = document.getElementById('hud-utc');
 
-  // scroll %
+  // scroll % + current section
   window.addEventListener('scroll', () => {
     const scrollMax = document.documentElement.scrollHeight - window.innerHeight;
-    hudScroll.textContent = scrollMax > 0 ? Math.round((window.scrollY / scrollMax) * 100) : 0;
+    hudScroll.textContent = (scrollMax > 0 ? Math.round((window.scrollY / scrollMax) * 100) : 0) + '%';
+    // update location
+    const sections = document.querySelectorAll('section[id]');
+    let current = 'HERO';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 200) current = s.id.toUpperCase(); });
+    hudLoc.textContent = current;
   });
 
-  // FPS counter
-  let frames = 0, lastFpsTime = performance.now();
-  function fpsLoop() {
-    frames++;
-    const now = performance.now();
-    if (now - lastFpsTime >= 1000) {
-      hudFps.textContent = frames;
-      frames = 0;
-      lastFpsTime = now;
-    }
-    requestAnimationFrame(fpsLoop);
+  // UTC clock
+  function updateUtc() {
+    const now = new Date();
+    hudUtc.textContent = now.toLocaleTimeString('en-GB', { hour12: false });
   }
-  fpsLoop();
-
-  // Latency (simulated navigation timing)
-  if (performance.timing) {
-    const lat = performance.timing.domContentLoadedEventEnd - performance.timing.navigationStart;
-    hudLat.textContent = lat > 0 ? lat : Math.floor(Math.random() * 40 + 10);
-  }
+  updateUtc();
+  setInterval(updateUtc, 1000);
 
   /* ---------- SCROLL BEAM ---------- */
   const beam = document.createElement('div');
