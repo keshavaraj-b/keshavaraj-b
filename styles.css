@@ -168,6 +168,13 @@ a{color:inherit;text-decoration:none}
 .ai-card p strong{color:var(--blue)}
 .ai-chip{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:100px;font-size:.72rem;font-weight:600;background:rgba(74,158,255,.08);color:var(--blue);border:1px solid rgba(74,158,255,.15)}
 .ai-card:hover{transform:translateY(-4px);border-color:var(--blue);box-shadow:var(--glow-blue)}
+.ai-card-featured{border-color:var(--coral);background:linear-gradient(135deg,var(--bg-card) 0%,rgba(255,107,138,.05) 100%)}
+.ai-card-featured:hover{border-color:var(--coral);box-shadow:var(--glow-coral)}
+.ai-card-featured .ai-chip{background:rgba(255,107,138,.08);color:var(--coral);border-color:rgba(255,107,138,.15)}
+.ai-tech-stack{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.ai-tech-stack span{padding:4px 10px;border-radius:100px;font-size:.68rem;font-weight:500;background:rgba(74,158,255,.06);color:var(--text-dim);border:1px solid var(--border)}
+.ai-card-link{display:inline-flex;align-items:center;gap:6px;margin-top:12px;padding:8px 16px;border-radius:var(--radius-sm);font-size:.8rem;font-weight:600;color:var(--text-bright);background:rgba(255,107,138,.1);border:1px solid rgba(255,107,138,.25);text-decoration:none;transition:var(--transition)}
+.ai-card-link:hover{background:rgba(255,107,138,.2);box-shadow:var(--glow-coral)}
 
 /* ---------- EDUCATION ---------- */
 .edu-timeline{display:flex;flex-direction:column;gap:24px;max-width:800px;margin:0 auto}
